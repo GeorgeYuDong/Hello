@@ -36,5 +36,18 @@ public class LinerSearch<E> {
         res = linerSearch(studentArray, student);
         System.out.println(res);
 
+        //算法性能测试
+        int[] dataSize = {100000, 1000000};
+        for (int n :
+                dataSize) {
+            Integer[] data = ArrayGenerator.generatorOrderedArray(n);
+            var startTime = System.nanoTime();
+            for (int i = 0; i < 100; i++) {
+                linerSearch(data, n);
+            }
+            var endTime = System.nanoTime();
+            var time = (endTime - startTime) / 1000000000.0;
+            System.out.println(time);
+        }
     }
 }
