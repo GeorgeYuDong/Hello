@@ -19,7 +19,8 @@ public class ThreadTest {
         ).start();
 
         var thread = new Thread(
-                () -> {
+                () ->
+                {
                     for (int i = 0; i < 10; i++) {
                         System.out.println(Thread.currentThread().getName() + ", china is the best country, " + i);
                         try {
@@ -31,7 +32,6 @@ public class ThreadTest {
                 }
         );
         thread.start();
-
 
     }
 }

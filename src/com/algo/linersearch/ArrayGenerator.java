@@ -1,4 +1,4 @@
-package com.algo;
+package com.algo.linersearch;
 
 public class ArrayGenerator {
     private ArrayGenerator() {

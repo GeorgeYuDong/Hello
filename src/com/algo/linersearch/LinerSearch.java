@@ -1,4 +1,6 @@
-package com.algo;
+package com.algo.linersearch;
+
+import com.algo.Student;
 
 public class LinerSearch<E> {
 
